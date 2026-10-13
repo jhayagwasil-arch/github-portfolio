@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Grade Calculator",
+    "description": "A web app that helps students compute their weighted grade and see what score they need on the final exam.",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "role": "Solo developer: designed the interface and wrote all the code",
+    "screenshot": "project1.png",
+    "link": "https://github.com/yourusername/grade-calculator"
+  },
+  {
+    "title": "Campus Events Board",
+    "description": "A group project that lists upcoming school events with search and category filters, backed by a small database.",
+    "technologies": ["Python", "Flask", "MySQL"],
+    "role": "Backend developer: built the database and the event search",
+    "screenshot": "project2.png",
+    "link": "https://github.com/yourusername/campus-events"
+  },
+  {
+    "title": "Weather Now",
+    "description": "A mobile-friendly weather dashboard that fetches live forecasts from a public REST API.",
+    "technologies": ["JavaScript", "REST API", "JSON"],
+    "role": "Solo developer: handled API calls, error messages and responsive layout",
+    "screenshot": "project3.png",
+    "link": "https://github.com/yourusername/weather-now"
+  }
+]

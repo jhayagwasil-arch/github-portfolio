@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of Mark Jay U. Agwasil, a BS Information Technology student looking for an internship.">
+  <title>Juan Dela Cruz | Portfolio</title>
+
+  <!-- Fonts: Poppins for headings, Inter for body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="#home" class="logo">JDC<span>.</span></a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button class="theme-toggle" id="themeToggle" aria-label="Switch to dark theme" title="Switch theme">
+            <span aria-hidden="true" id="themeIcon">🌙</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HOME ============ -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Hello, I'm</p>
+          <h1>Mark Jay U. Agwasil</h1>
+          <p class="tagline">Aspiring Web Developer &amp; Problem Solver</p>
+          <p class="intro">
+            I'm a third-year IT student who loves turning ideas into clean, useful websites.
+            I'm looking for an internship where I can learn from a team and build real things.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View my projects</a>
+            <a href="#contact" class="btn btn-outline">Contact me</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <!-- Add your photo later as images/profile.jpg. Until then, a placeholder avatar shows. -->
+          <img src="images/profile.jpg" alt="Profile photo of Mark Jay U. Agwasil" width="320" height="320"
+               onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 600 600%27%3E%3Crect width=%27600%27 height=%27600%27 fill=%27%23e0e7ff%27/%3E%3Ccircle cx=%27300%27 cy=%27230%27 r=%2790%27 fill=%27%234f46e5%27/%3E%3Cellipse cx=%27300%27 cy=%27540%27 rx=%27190%27 ry=%27200%27 fill=%27%234f46e5%27/%3E%3C/svg%3E'">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <article class="card">
+            <h3>Biography</h3>
+            <p>
+              I grew up fixing relatives' laptops and got hooked on how software works.
+              Today I build small web apps, help classmates debug their code, and spend free time
+              learning something new every week.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Education</h3>
+            <p><strong>Bachelor of Science in Information Technology</strong></p>
+            <p>Your University Name, Philippines</p>
+            <p>Expected graduation: 2028</p>
+          </article>
+          <article class="card">
+            <h3>Career Goals</h3>
+            <p>
+              To grow into a full-stack web developer who builds accessible,
+              reliable products. In the short term, I want a hands-on internship in web development.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Interests</h3>
+            <ul class="tag-list">
+              <li>Web development</li>
+              <li>UI design</li>
+              <li>Open source</li>
+              <li>Basketball</li>
+              <li>Coffee shops</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <article class="card">
+            <h3>Programming Languages</h3>
+            <ul class="tag-list">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Python</li><li>Java</li><li>SQL</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Tools &amp; Technologies</h3>
+            <ul class="tag-list">
+              <li>Git &amp; GitHub</li><li>VS Code</li><li>Figma</li><li>MySQL</li><li>REST APIs</li><li>JSON</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Soft Skills</h3>
+            <ul class="tag-list">
+              <li>Teamwork</li><li>Communication</li><li>Time management</li><li>Problem solving</li><li>Willingness to learn</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-sub">A few things I've built so far.</p>
+
+        <!-- Cards are generated by js/script.js from data/projects.json -->
+        <div class="projects-grid" id="projectsGrid" aria-live="polite">
+          <p class="status-msg">Loading projects…</p>
+        </div>
+
+        <h3 class="subheading">Latest GitHub repositories</h3>
+        <ul class="repo-list" id="repoList" aria-live="polite">
+          <li class="status-msg">Loading repositories…</li>
+        </ul>
+
+        <h3 class="subheading">Achievements &amp; certifications</h3>
+        <ul class="achievements">
+          <li>Dean's Lister, 1st Semester (replace with your own)</li>
+          <li>Responsive Web Design Certification (replace with your own)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-grid">
+          <div class="card">
+            <h3>Let's connect</h3>
+            <p>I'm open to internship opportunities. Send me a message or find me online.</p>
+            <ul class="contact-links">
+              <li><strong>Email:</strong> <a href="mailto:juan.delacruz@example.com">juan.delacruz@example.com</a></li>
+              <li><strong>GitHub:</strong> <a href="https://github.com/yourusername" target="_blank" rel="noopener">github.com/yourusername</a></li>
+              <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener">linkedin.com/in/yourusername</a></li>
+            </ul>
+          </div>
+
+          <form class="card" id="contactForm" novalidate>
+            <h3>Send a message</h3>
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" placeholder="Your name">
+            <span class="error" id="nameError" role="alert"></span>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com">
+            <span class="error" id="emailError" role="alert"></span>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="How can I help?"></textarea>
+            <span class="error" id="messageError" role="alert"></span>
+
+            <button type="submit" class="btn btn-primary">Send</button>
+            <p class="form-success" id="formSuccess" role="status" hidden></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year">2026</span>Mark Jay U. Agwasil. Built with HTML, CSS &amp; JavaScript.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
